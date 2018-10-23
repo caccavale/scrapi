@@ -21,7 +21,7 @@ class Scrapi(Flask):
     def __init__(self, domain, cookies=None, cache=False, max_cache=128, *args, **kwargs):
         super().__init__(__name__, *args, **kwargs)
         self.domain = domain if domain.startswith('http') else 'http://' + domain
-        self.cookies = cookies if cookies is not None else {}
+        self.cookies = {} if cookies is None else cookies
         self.cache = cache
         if self.cache:
             for func in [self.cached, self.get_soup, self.get_page]:
