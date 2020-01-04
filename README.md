@@ -1,6 +1,6 @@
 # scrapi
 
-ScrAPI is a really dump afternoon project that "wraps" any website in a _very_ dumb restful API.
+ScrAPI is an afternoon project that "wraps" any website in a _very_ dumb restful API.
 
 It is run with `python3 scrapi <website>` and spawns a flask instance on the default `127.0.0.1:5000`.  You can then query this endpoint like you would the website:
 
